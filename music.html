@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html style="word-wrap: break-word">
+	<head>
+		<title>A funny site</title>
+		<link rel="icon" type="image/x-icon" href="/images/spike.jpg">
+		<style>
+		@font-face{
+			  font-family: "eldur";
+			  src: url('/images/eldur.ttf') format('truetype');
+			}
+			body{
+				background-color:#000000;
+      				background-size:auto;
+      				background-image:url('/images/back.gif');
+				font-family:"eldur";
+			}
+			#container{
+				width:100%;
+			}
+			.align_right{
+				text-align:right;
+			}
+			.align_center{
+				text-align:center;
+			}
+			.center{
+				position:relative;
+				left:50%;
+				transform:translateX(-50%);
+			}
+			.part{
+				width:69%;
+				margin:auto;
+			}
+			.left{
+				position:absolute;
+				width:14%;
+				right:85%;
+			}
+			.right{
+				position:absolute;
+				width:14%;
+				left:85%;
+			}
+			.divide{
+				width:99%;
+				margin:auto;
+				height:5px;
+				background-color:#3d8394;
+			}
+			h1, p{
+				color:#3d8934;
+			}
+			p {
+				font-size:20px;
+			}
+			ul{
+				list-style:none;
+			}
+			a{
+  				color:#3d9394;
+				text-decoration:none;
+			}
+			a:hover{
+				color:#3d8934
+			}
+			.content_div {
+				margin-bottom:5px;
+				padding:5px;
+				background-color:#000000;
+				border: 1px solid #3d8394;
+				box-shadow: 3px 4px #3d8934;
+			}
+			img {
+				width:100%;
+			}
+			.button{
+				width:88px;
+			}
+			button{
+				background-color:#3d8934;
+			}
+		</style>
+		<script>
+			var disco = function(){
+				if(document.getElementById("panzer").paused === false){
+					document.getElementById("panzer").pause();
+					document.getElementById("balls").textContent = ">";
+				}else{
+					document.getElementById("panzer").play();
+					document.getElementById("balls").textContent = "||";
+				}
+			}
+			var rewind_disco = function(){
+				document.getElementById("panzer").currentTime -= 10;
+			}
+			var forward_disco = function(){
+				document.getElementById("panzer").currentTime += 10;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="left">
+				<div class="content_div">
+					<p><a href="/music.html">.</a><br><a href="/index.html">..</a><br><a href="/about.html">Personel File</a><br><a href="/wtstuff.html">War Thunder</a><br><a href="/jack.html">Mad Jack Churchill</a><br><a href="/planes.html">Airplanes</a></p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="content_div">
+					<img src="/images/disco panzer.gif">
+					<audio src="/images/Disco Panzer.mp3" style="width:100%" id="panzer">
+					</audio>
+					<div class="align_center">
+						<button onclick="rewind_disco();"><-</button>
+						<button onclick="disco();" id="balls">></button>
+						<button onclick="forward_disco();">-></button>
+					</div>
+				</div>
+			</div>
+			<div class="part">
+				<div class="content_div">
+					<h1 class="align_center">Some Music I Would Reccomend</h1>
+					<div class="divide"></div>
+				</div>
+				<div class="content_div">
+					<h1>Go listen to Alan Aztec</h1>
+					<div class="divide"></div>
+					<p>Alan Aztec is some guy who makes hardbass I guess. My favorite of his songs is Disco Panzer(technically the album cover depicts a modified Stug III, which is not a panzer nor a tank but an assault gun but that  doesn't really matter), but I like a lot of what he makes in general. Oh and Kubelwagen GTI is a good one too. Alan Aztec's music itself is kinda varied, some is about hardbass itself, some is about particular usually European countries such as Germanay, Poland, and Russia. Some stuff he's done recently is related to historical events and figures, he's made a song about Charles de Gaulle, Lauri Torni, and St. Joan of Arc interestingly enough(maybe with luck we'll get something about White Death or Mad Jack). He's also got a song about D-Day focusing on French freedom which is pretty cool.</p>
+					<p>[Insert links to Alan Aztec]</p>
+				</div>
+			</div>
+ 		</div>
+
+	</body>
+</html>
+
+
